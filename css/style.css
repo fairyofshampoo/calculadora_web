@@ -1,0 +1,130 @@
+/*Wildcard/Comodin, aplica a cualquier elemento o componetne del documento HTML */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Estilo a etiqueta directa de HTML*/
+body{
+    width: 100%; /*Porcentaje de tamaño pantalla Ancho dinámico*/
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #1f3d6b);
+}
+
+/*Estilo a etiqueta directa de HTML*/
+header{
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+/*Estilo a etiqueta directa de HTML*/
+footer{
+    background-color: rgb(1,123,23);
+    position: absolute;
+    bottom: 0%; /*Con base en la ubicación absoluta, 
+    posición del componente de abajo hacia arriba*/
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/*Estilo a nivel de clase*/
+.contenido{
+    /*Centrar div contenido */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    /*Formato del div contenido*/
+    width: 40%;
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113,115,119,0.5);
+}
+
+/*Estilo a etiqueta directa de HTML*/
+table{
+    width: 100%;
+}
+
+/*Estilo a etiqueta directa de HTML solo para un tipo en especifico*/
+input[type="button"]{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+/*Estilo a etiqueta directa de HTML solo para un tipo en especifico
+adicionalmente que tenga un ESTADO EN ESPECIFICO*/
+input[type="button"]:hover{
+    background-color: #B7D7F9;
+}
+
+/*Estilo a un componente directo a partir de su ID*/
+#txt_resultado{
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    color: black;
+    font-size: 45px;
+    background-color: gainsboro;
+}
+
+/*Estilo a un componente directo a partir de su ID*/
+#b_ig{
+    background-color: #c6f9b7;
+    border: none;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 5%;
+    transition-duration: 0.5s;
+}
+
+/*Estilo a un componente directo a partir de su ID en un estado del componente*/
+#b_ig:hover{
+    background-color: #66cf47;
+}
+
+#b_lim, #b_borr{
+    background-color: #f9e0b7;
+    border: none;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+#b_lim:hover, #b_borr:hover{
+    background-color: #cf8d47;
+}
+
+
+#b_open, #b_close{
+    background-color: #b7d1f9;
+    border: none;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+#b_open:hover, #b_close:hover{
+    background-color: #4784cf;
+}
